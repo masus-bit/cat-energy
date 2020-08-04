@@ -1,0 +1,217 @@
+    .catalog__cat--wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .item__card__btn {
+        width: 280px;
+        height: 40px;
+        display: flex;
+        color: white;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        background-color: #68b738;
+    }
+    
+    .item__card {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 280px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .catalog__item {
+        display: flex;
+        align-self: center;
+        list-style-type: none;
+        border-top: solid 1px #ededed;
+        border-bottom: solid 1px #ededed;
+    }
+    
+    .stock {
+        margin-left: 40px;
+        color: white;
+        border: solid;
+        background: url('../img/gift-photo-mobile.jpg.png');
+        background-size: cover;
+    }
+    
+    .more__button {
+        background-color: #ededed;
+    }
+    
+    .item__card__title {
+        font-size: 17px;
+    }
+    
+    .item__card--wrapper {
+        margin-left: 20px;
+        width: 80px;
+        display: inline-block;
+    }
+    
+    .item__card__prop {
+        font-size: 13px;
+    }
+    
+    .advanced__list {
+        list-style: none;
+    }
+    
+    .stock,
+    .stock__back {
+        width: 280px;
+        height: 290px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .stock {
+        align-self: center;
+    }
+    
+    .stock__back {
+        align-self: center;
+    }
+    
+    .stock__text {
+        width: 200px;
+        text-align: center;
+    }
+    
+    @media(min-width:1200px) {
+        .nav-menu__main,
+        .nav-menu__catalog,
+        .nav-menu__program {
+            color: black
+        }
+        .cata__main {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .item__card__btn {
+            width: 175px;
+            height: 40px;
+            display: flex;
+            color: white;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            background-color: #68b738;
+        }
+        .item__card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 245px;
+            height: 430px;
+            background-color: #f2f2f2;
+        }
+        .catalog__list {
+            padding: 0px;
+            display: flex;
+            width: 1220px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .more__button {
+            display: flex;
+            width: 175px;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+        }
+        .item__card {
+            margin-top: 150px;
+            display: flex;
+        }
+        .item__card--wrapper {
+            flex-wrap: wrap;
+            width: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .item__card__prop tr {
+            border-bottom: solid 1px red;
+        }
+        .item__card__title {
+            width: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .advanced__list {
+            display: flex;
+            flex-direction: column;
+        }
+        .advanced__item__card {
+            display: flex;
+            flex-direction: row;
+            width: 900px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .advanced__wrap {
+            display: flex;
+            flex-direction: row;
+        }
+        .advanced__text {
+            align-self: center;
+        }
+        .more {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .catalog__cat--wrapper {
+            margin-top: 100px;
+            width: 100%;
+        }
+        .menu__main,
+        .menu__catalog,
+        .menu__program {
+            position: relative;
+            color: black !important;
+            text-decoration: none;
+        }
+        .item__card__prop tr {
+            padding-bottom: 50px;
+        }
+        .item__value {
+            padding-right: 60px;
+            border-bottom: #cdcdcd solid 1px;
+        }
+        .item__weight {
+            border-bottom: #cdcdcd solid 1px;
+        }
+        .item__card__pic {
+            margin-top: -100px;
+        }
+        .advanced__wrapper {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .advanced {
+            font-size: 35px;
+            position: absolute;
+            margin-left: -410px;
+            margin-top: 20px;
+        }
+        .advanced__palka {
+            width: 100%;
+            margin: 50px auto;
+        }
+    }

@@ -1,0 +1,137 @@
+$font:'Oswald',
+sans-serif;
+body {
+    font-family: $font;
+}
+
+.nav-menu__main,
+.nav-menu__catalog,
+.nav-menu__program {
+    width: 320px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-menu__item {
+    margin-left: -40px;
+    display: flex;
+    width: 320px;
+    list-style: none;
+    text-decoration: none;
+    border-top: 1px solid #f2f2f2;
+    justify-content: center;
+    height: 65px;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.header--wrapper {
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.header__logo-text,
+.header__logo,
+.burger,
+.burger--active {
+    margin-left: 30px;
+}
+
+.logo--wrapper {
+    height: 65px;
+    margin-left: -40px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.burger {
+    display: flex;
+    width: 30px;
+    height: 18px;
+    background: url('../img/mobile-menu.png') center;
+    z-index: 1500;
+}
+
+.burger--active {
+    background: url('../img/m-close.png') no-repeat center;
+}
+
+.burger:hover {
+    background-color: #f2f2f2;
+    box-shadow: 0 0 2;
+}
+
+.nav-menu__list--wrapper {
+    display: none;
+}
+
+.nav-menu--active {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(min-width:1200px) {
+    .burger {
+        display: none;
+    }
+    .header--wrapper {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav-menu__list {
+        margin-left: -150px;
+        display: flex;
+        justify-content: flex-end;
+        text-decoration: none;
+    }
+    .nav-menu__item {
+        border: none;
+        width: 150px;
+        justify-content: flex-end;
+        margin-left: 30px;
+    }
+    .nav-menu__main,
+    .nav-menu__catalog,
+    .nav-menu__program {
+        position: relative;
+        color: white;
+    }
+    .header__logo-text {
+        display: none;
+    }
+    .nav-menu__list--wrapper {
+        display: inline;
+    }
+    .nav-menu__main--active::after {
+        content: '';
+        position: absolute;
+        /* Абсолютное позиционирование */
+        background: #68b738;
+        /* Цвет линии */
+        left: 0px;
+        /* Положение линии слева */
+        bottom: -5px;
+        /* Положение линии */
+        width: 100%;
+        /* Линия на ширину текста */
+        height: 2px;
+        /* Высота линии */
+    }
+}

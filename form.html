@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>Cat Energy</title>
+</head>
+
+<body>
+    <header class='header'>
+        <div class="header--wrapper">
+            <div class="logo--wrapper">
+                <picture>
+                    <source srcset="./img/logo-desktop.png" media="(min-width: 1200px)">
+                    <img class='header__logo' src="./img/logo-mobile.svg.png" alt="Cat energy">
+                </picture>
+                <a class="header__logo-text" href='#'>
+                    <img class="header__logo-text-img" src="./img/logo-mobile-header.svg.png" alt="Cat energy">
+                </a>
+                <div class="burger  "></div>
+            </div>
+            <nav class="header__menu">
+                <div class="nav-menu__list--wrapper ">
+                    <ul class="nav-menu__list">
+                        <li class="nav-menu__item"><a class="menu__main" href="index.html">ГЛАВНАЯ</a></li>
+                        <li class="nav-menu__item"><a class="menu__catalog" href="D:\openserver\OpenServer\domains\localhost\ver\catalog.html">КАТАЛОГ ПРОДУКЦИИ</a></li>
+                        <li class="nav-menu__item"><a class="menu__program  nav-menu__main--active" href="./form.html">ПОДБОР ПРОГРАММЫ</a></li>
+                    </ul>
+
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <main class="form-main">
+        <h2 class="form__title">ПОДБОР ПРОГРАММЫ</h2>
+        <div class="page--wrapper">
+
+
+            <form class="form" action="hz">
+                ЗАПОЛНИТЕ АНКЕТУ И МЫ ПОДБЕРЕМ <br> ПРОГРАММУ ПИТАНИЯ ДЛЯ ВАШЕГО КОТА <br>
+                <div class="basic--wrapper">
+                    <div class="form__basic">
+                        <p class="form__name"> ИМЯ:*
+                            <input class="form__input" type="text" name="name" id="name" placeholder="БАРСИК" required>
+                        </p>
+                        <p class="form__weight">ВЕС (КГ)*: <input class="form__input" type="text" name="weight" id="weight" required></p>
+                        <p class="form__age">ВОЗРАСТ (ЛЕТ) <input class="form__input" type="number" name="age" id="age"></p>
+                    </div>
+                    <div class="form__program">
+                        <input class="program-radio" type="radio" id="slim" name="program" value="slim" checked>
+                        <label class="program__label" for="slim"></label>
+                        <p class="label-text">ПОХУДЕНИЕ</p>
+                        <br>
+
+                        <input class="program-radio" type="radio" id="fat" name="program" value="fat">
+                        <label class="program__label" for="fat"></label>
+                        <p class="label-text">НАБОР МАССЫ</p>
+                        <br>
+                        <input class="program-radio" type="radio" id="dontknow" name="program" value="dontknow">
+                        <label class="program__label" for="dontknow"></label>
+                        <p class="label-text">НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</p>
+                    </div>
+                </div>
+                <div class="form__contacts">
+                    <fieldset class="form__contacts__field">
+                        <h3 class="form__contatcs__title">Контактные данные (владельца кота)</h3>
+                        <img class="form__contacts__pogo" src="./img/header line1.png">
+                        <div class="inputs__contact">
+                            <p class="form__contacts__email"> E-MAIL:* <input class="form__input__cont" type="email" placeholder="KUKLACHEV@GMAIL.COM"></p>
+                            <p class="form__contacts__phone">ТЕЛЕФОН:* <input class="form__input__cont" type="phone" name="phone" id="phone" placeholder="8(960)900-60-90"></p>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="comment">
+                    <fieldset class="form__comment__field">
+                        <h3 class="comment__title">Комментарий</h3>
+                        <img class="form__contacts__pogo" src="./img/header line2.png">
+                        <textarea class="comment__area" name="comment" id="comment" cols="30" rows="10" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
+                    </fieldset>
+                </div>
+                <div class="advanced-form">
+                    <h3 class="advanced__f__title">Дополнительно</h3>
+                    <img class="form__contacts__pogo" src="./img/header line2.png">
+                    <div class="inputs__adv">
+                        <div class="check__item--wrapper">
+                            <input class="advanced__check" id="check1" type="checkbox" checked>
+                            <label class="check__label lab1" for="check1"></label>
+                            <p class="lab__text">САХАРОЗАМЕНИТЕЛЬ</p><br id="br">
+                        </div>
+                        <div class="check__item--wrapper">
+                            <input class="advanced__check" id="check2" type="checkbox">
+                            <label class="check__label" for="check2"></label>
+                            <p class="lab__text">ПИТЬЕВАЯ ВОДА</p><br id="br">
+                        </div>
+                        <div class="check__item--wrapper">
+                            <input class="advanced__check" id="check3" type="checkbox">
+                            <label class="check__label" for="check3"></label>
+                            <p class="lab__text">МОЛОКО</p><br id="br">
+                        </div>
+                        <div class="check__item--wrapper">
+                            <input class="advanced__check" id="check4" type="checkbox">
+                            <label class="check__label" for="check4"></label>
+                            <p class="lab__text">ВИТАМИНЫ</p><br id="br">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="send-form--wrapper">
+                    <input class="sendform__button" type="submit" value="ОТПРАВИТЬ ЗАЯВКУ"> <br>
+                    <small class="form__feature">* - Обязательные поля</small>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="coop">
+
+            <p class="coop__title">
+                <h3 class="coop__title__text">ПРИГЛАШАЕМ <br> К СОТРУДНИЧЕСТВУ <br> ДИЛЕРОВ!</h3>
+            </p>
+            <p class="coop__address">ул. Большая <br> конюшенная, д. 19/8 <br> <br> Санкт-Петербург</p>
+
+        </div>
+        <div class="map">
+            <img class="map__pic" src="#" alt="">
+            <img class="map__pin" src="./img/map-pin.png" alt="">
+        </div>
+
+        <div class="logos">
+            <a class="footer__logo-text" href='./index.html'>
+                <img class="footer__logo-text-img" src="./img/logo-mobile-header.svg.png" alt="Cat energy">
+            </a>
+            <ul class="social__list">
+                <li class="social__list__item social__item--vk">
+                    <a href="#"><img class="vk" src="./img/m-vk.svg.png" alt=""></a>
+                </li>
+                <li class="social__list__item social__item--insta">
+                    <a href="#"><img class="insta" src="./img/m-insta.svg.png" alt=""></a>
+                </li>
+                <li class="social__list__item social__item--fb">
+                    <a href="#"><img class="fb" src="./img/m-fb.svg.png" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./sass/menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+.map {
+    background-position: center;
+    background-size: cover;
+    background: url('../img/map.png') 100% 100% no-repeat;
+}
+
+.coop__address {
+    color: #b7b7b7;
+}
+
+.social__list__item {
+    margin-right: 20px;
+    display: inline-block;
+    list-style-type: none;
+}
+
+.coop {
+    padding-left: 20px;
+    padding-right: 10px;
+    background-color: #f2f2f2;
+    display: flex;
+    width: 270px;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+.map {
+    width: 320px;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+    align-items: center;
+}
+
+.map__pin {
+    display: flex;
+    width: 113px;
+    height: 106px;
+    z-index: 1000;
+    left: 500px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.coop__title__text br,
+.coop__address br {
+    display: none;
+}
+
+@media(min-width:1000px) {
+    .coop__title__text br,
+    .coop__address br {
+        display: inline;
+        ;
+    }
+    .map__pin {
+        display: flex;
+        width: 113px;
+        height: 106px;
+        z-index: 1000;
+        margin-left: 620px;
+        margin-top: 0px;
+    }
+    .map {
+        width: 100%;
+        background: url('../img/map-desk.png') 100% 100% no-repeat;
+    }
+    .footer {
+        margin-left: -20px;
+        width: 100%;
+        position: relative;
+    }
+    .coop {
+        position: absolute;
+        left: 50px;
+        top: 70px;
+        width: 570px;
+        height: 205px;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .coop__title__text,
+    .coop__address {
+        margin: 0;
+        padding: 0;
+    }
+    .footer__logo-text {
+        display: flex;
+        width: 200px;
+        align-items: center;
+    }
+    .logos {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+}
